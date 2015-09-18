@@ -76,7 +76,7 @@ If ($Sel -eq $null)
 Else 
     {sendFailEmail}
 
-## if the backup report has no feedback (all files were copied successfully) it will send a success email, it also checks the previous
+## if the backup report has no feedback (all files were copied successfully) it will send a success email
 $File = Get-ChildItem $backupReport
 if ($File.Length -eq 0 -and $Sel -eq $null) {sendSuccessEmail}
 
